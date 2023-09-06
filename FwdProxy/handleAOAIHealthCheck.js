@@ -12,7 +12,6 @@ module.exports = async function (context, req) {
       const deployments = context.bindingData.deployments;
       const apiversion = (req.query['api-version']);
 
-      modelname = modelname || context.bindingData.modelname;
       healthcheckPrompt = healthcheckPrompt || 'hi, I am healthcheck'
 
       context.log('aoai_healthcheck');  
